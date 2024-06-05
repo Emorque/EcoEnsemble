@@ -31,6 +31,9 @@ window.addEventListener('scroll', handleScroll)
 let revealableContainers = document.querySelectorAll('.revealable');
 let revealableContainersLeft = document.querySelectorAll('.revealable-left');
 
+/* Additional Elements that require slow-down functionality */
+let animation_p = document.querySelectorAll('.fade');
+
 let animation = {
   revealDistance: 150,
   initialOpacity: 0,
@@ -75,9 +78,15 @@ const reduceMotion = () => {
   for (let i = 0; i < revealableContainers.length; i++) {
     revealableContainers[i].style.revealDistance = animation.revealDistance;
     revealableContainers[i].style.transitionDuration = animation.transitionDuration;
+  }
 
+  for (let i = 0; i < revealableContainersLeft.length; i++){
     revealableContainersLeft[i].style.revealDistance = animation.revealDistance;
     revealableContainersLeft[i].style.transitionDuration = animation.transitionDuration;
+  }
+
+  for (let i = 0; i < animation_p.length; i++){
+    animation_p[i].style.transitionDuration = animation.transitionDuration;
   }
 }
 
