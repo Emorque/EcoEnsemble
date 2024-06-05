@@ -1,0 +1,446 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #1b241d;
+  /*background-image: url('');*/
+
+  /* font, size, and color for text */
+  font-family: Arial;
+  font-size: 16px;
+  color: white;
+
+  /* padding and margins */
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+/* Style rules for any headings (h1-6), paragraphs, and links */
+
+h1 {
+  background-color: #314134;
+}
+
+h2 {
+  background-color: #314134;
+  color: wheat;
+  padding: 10px;
+}
+
+h3 {
+  background-color: #314134;
+  padding: 10px;
+}
+
+p {
+  padding-left: 10px;
+}
+
+.fade{
+  transition-duration: 2s;
+  transition-property: all;
+  transition-timing-function: ease;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: #c3afbf;
+}
+
+a:hover {
+  color: #866580;
+}
+
+a:active {
+  color: #694e63;
+}
+
+/* Style rules for Buttons */
+button {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  padding: 15px 32px;
+  cursor: pointer;
+}
+
+/* Style rules for header */
+.header-container {
+  padding-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+#header-img {
+  max-width: 524px;
+  max-height: 542px;
+}
+
+
+.header-button {
+  background-color: #00ffb1;
+  text-align: center;
+  font-size: 100%;
+  padding: 8px;
+
+  margin: 5px;
+  border: 8px solid black;
+  color: black;
+
+  cursor: pointer;
+}
+
+.header-item:nth-of-type(2) {
+  width: 60%;
+}
+
+.header-item:nth-of-type(1) {
+  width: 40%
+}
+
+/* Style rules for footer */
+.footer {
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+  background-color: #241B22EE;
+}
+
+
+/* Style rules for Navbar */
+.navbar {
+  position: relative;
+  z-index: 3;
+}
+
+/* Style rules for all items in ul */
+.navbar ul {
+  position: fixed;
+  margin-top: 0px;
+  background-color: #241B22EE;
+  list-style: none;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+}
+
+.navbar ul li {
+  float: left;
+  padding: 10px;
+}
+
+.navbar ul li a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  font-family: Arial;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  font-weight: bold;
+  color: #00ffb1;
+}
+
+/* Flexbox */
+
+/* Style rules for flex container */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* Style rules for all flex-items */
+.flex-item {
+  background: white;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Style rules for theme-button */
+.theme-button {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  font-family: Arial;
+  color: black;
+  font-size: 16px;
+  background-color: #41313E;
+  border: wheat;
+  border-width: 5px;
+}
+
+.theme-button:hover {
+  background-color: #5E475A;
+  color: white;
+}
+
+/* Style rules for embeded YT video */
+#containerVid {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  align-items: center;
+  flex-direction: column;
+}
+
+#imagineVid {
+  padding: 10px;
+  text-decoration: overline underline;
+  background-color: #314134;
+  border: 5px dotted wheat;
+}
+
+/* Style rules for petition */
+.petition-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.petition-para {
+  width: 55%;
+  padding-right: 10px;
+}
+
+.signatures {
+  width: 45%;
+  padding-right: 10px;
+}
+
+#sign-now-button {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  font-family: Arial;
+  color: white;
+  font-size: 16px;
+  background-color: #314134;
+  border: 5px, wheat, dotted;
+  border-width: 5px;
+  margin-top: 5px;
+}
+
+/* Style rules for sliding animations */
+
+.revealable {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition-duration: 2s;
+  transition-property: all;
+  transition-timing-function: ease;
+}
+
+.rev-impact {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.rev-impact h3 {
+  margin-left: 20px;
+}
+
+.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.revealable-left {
+  position: relative;
+  transform: translateX(-150px);
+  opacity: 0;
+  transition-duration: 2s;
+  transition-property: all;
+  transition-timing-function: ease;
+}
+
+.activeSide {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+/* The modal covers the background and prevents user interactions */
+.modal {
+  display: none;
+  /* hides the modal from view by default*/
+  position: fixed;
+  z-index: 4;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* 40% opacity black - other elements can still be seen */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* box that contains all the content and images */
+.modal-content {
+  background-color: #41313E;
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#thanks-modal-content {
+  width: 20rem;
+}
+
+#modal-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#modal-close-button {
+  border: 5px, wheat, dotted;
+  z-index: 3;
+}
+
+/* Style rules for error (petition) */
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background: pink;
+}
+
+/*Style rules for starting header*/
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+#head_text {
+  position: relative;
+  padding-bottom: 100px;
+  background-color: transparent;
+  color: white;
+  font-size: 75px;
+  z-index: 0;
+}
+
+#foliage {
+  z-index: 2;
+}
+
+.w_footer {
+  display: flex;
+  flex-direction: row;
+}
+
+#top-button {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#reveal-img {
+  text-align: center;
+}
+
+/* Style rules for Dark Mode Theme */
+.dark-mode {
+  background-color: #5a6f66;
+  color: black;
+}
+
+.dark-mode h2 {
+  color: pink;
+}
+
+.dark-mode h1 {
+  background-color: #718B80;
+}
+
+.dark-mode h2 {
+  background-color: #718B80;
+  color: #6F5A63;
+}
+
+.dark-mode h3 {
+  background-color: #718B80;
+}
+
+.dark-mode a:link {
+  color: white;
+}
+
+.dark-mode a:visited {
+  color: #53434a;
+}
+
+.dark-mode a:hover {
+  color: #382e32;
+}
+
+.dark-mode a:active {
+  color: #1e191b;
+}
+
+.dark-mode .modal-content {
+  background-color: #718B80;
+}
+
+.dark-mode #modal-close-button {
+  color: white;
+  background-color: #314134;
+}
+
+.dark-mode .navbar ul {
+  color: white;
+}
+
+.dark-mode .navbar ul li a {
+  color: white;
+}
+
+.dark-mode .navbar ul li a:hover {
+  color: #00ffb1;
+}

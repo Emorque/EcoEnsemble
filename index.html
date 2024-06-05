@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>EcoEnsemble</title> <!-- Website Name -->
+  <link rel="icon" href="img/eco-logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Part 1: Navbar -->
+  <div class="navbar">
+    <ul>
+      <li><a href="#containerVid">Imagine</a></li>
+      <li><a href="#Impact">Impact</a></li>
+      <li><a href="#News">News</a></li>
+      <li><button class="theme-button" id="darkMode-button">Toggle Dark Mode</button></li>
+      <li><button class="theme-button" id="slowmo-button">Slow Motion</button></li>
+    </ul>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <!--- Starting Heading --->
+  <section>
+    <img id="head_bg" src="img/earth.jpg">
+    <img id="foliage" src="img/foliage.png">
+    <h2 id="head_text">EcoEnsemble</h2>
+  </section>
+
+  <!-- Embeded YouTube video -->
+  <div id="containerVid">
+    <div id="imagineVid">
+      <iframe id="imagineVid" width="800px" height="401.16px" src="https://www.youtube.com/embed/XALBGkjkUPQ"
+        title="Imagine for 1 Minute" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <p class="fade">Credit: Conservation International</p>
+  </div>
+
+  <!--- About --->
+  <h2>About My Topic</h2>
+  <p class="fade">EcoEnsemble is project dedicated to tackling the pressing issue of climate change. We serve as a hub for
+    like-minded people from all walks of life, coming together to share knowledge, and take meaningful actions to combat
+    climate change.</p>
+  <p class="fade">Join us today in the fight against climate change and be a part of the global effort to create a sustainable and
+    eco-conscious world.</p>
+
+  <!--- Impact --->
+  <h2 id="Impact">Impact!</h2>
+
+  <!--- Content with sliding animations --->
+  <div class="revealable rev-impact">
+    <img height="207px" width="369px" src="img/school-climate-change.jpg"
+      alt="Placeholder" />
+    <h3>Educate Yourself</h3>
+    <p>Start with accessible resources like documentaries and articles to grasp the basics. Dive deeper by exploring
+      scientific reports and books written by experts. Take online courses or attend local events, stay updated, and
+      develop critical thinking skills to distinguish reliable sources from misinformation. Sharing your knowledge with
+      others can also help raise awareness and inspire collective action.
+    </p>
+  </div>
+
+  <div class="revealable rev-impact">
+    <h3>What Is Natural?</h3>
+    <p>With the technological advancements made, it is impossible to live for more than a second without having some
+      impact on the environment. It can be the clothes that you wear, the heating in your house, to your smartphone; an
+      environmental cost was made to give you these privileges. Thus, a term was coined: carbon footprint. To the
+      average person, this can invoke fear and guilt; the idea that your use of technology and advancements is pushing
+      the Earth towards its limitations. It makes them more conscious of their lifestyle, driving them to believe that a
+      “natural” lifestyle, can help the Earth.
+    </p>
+  </div>
+
+  <div class="revealable rev-impact">
+    <h3>How Much Do You Contribute?</h3>
+    <p>The truth is that the idea of a “carbon footprint” gives the public tunnel vision. They become blinded towards
+      what companies and institutions are doing, instead, choosing to focus on their own individual impacts. Yet, just
+      take one moment to question, is it realistic to compare a person’s, or a family’s impact on the Earth compared to
+      a company or a factory? The answer is no, yet not obvious when the market is driven towards promoting a “natural”
+      lifestyle. All of a sudden, recycling that extra plastic bottle or using a paper straw seems trivial. This
+      presents the limitations of the ecological footprint. Calculating one’s footprint proves how little impact they
+      have in the face of companies and institutions. This does not mean to not care about your contributions, but to
+      instead think about the greater picture.
+    </p>
+  </div>
+
+  <div class="revealable rev-impact">
+    <img height="214px" width="369px" src="img/reduce-carbon-footprint.jpg"
+      alt="Placeholder" />
+    <h3>Reduce Your Carbon Footprint</h3>
+    <p>Reducing your carbon footprint involves making conscious choices to minimize your contribution to greenhouse gas
+      emissions. You can achieve this by adopting energy-efficient practices, such as using LED bulbs, reducing energy
+      consumption, and opting for public transportation or carpooling. Supporting renewable energy sources like solar or
+      wind power for your home and advocating for sustainable policies are essential steps to help mitigate climate
+      change.
+    </p>
+  </div>
+
+  <!--- News --->
+  <h2 id="News">Recent News</h2>
+
+  <!-- News Links with sliding animation (from left) -->
+  <div class="revealable-left">
+    <a href="https://climate.nasa.gov/news/3282/nasa-announces-summer-2023-hottest-on-record/">
+      <article>
+        <h3>NASA Announces Summer 2023 Hottest on Record</h3>
+        <p>The months of June, July, and August combined were 0.41°F / 0.23°C warmer than any other summer in NASA’s
+          record</p>
+      </article>
+    </a>
+  </div>
+
+  <div class="revealable-left">
+    <a href="https://www.bbc.com/news/science-environment-66867679">
+      <article>
+        <h3>Could Rishi Sunak's green review threaten UK net zero?</h3>
+        <p>The UK's efforts towards a 2060 zero emmision country have been slow</p>
+      </article>
+    </a>
+  </div>
+
+  <!-- Petition with sliding animation -->
+  <div class="petition revealable" id="petition">
+    <h2>Sign Our Petition 📢</h2>
+    <p id="counter" class="p2" style="display: none;">🖊️ 3 people have signed this petition and support this cause.</p>
+    <div class="petition-container">
+
+
+      <div class="petition-para">
+        <p>We urge you to join us in taking action against the pressing issue of climate change. The consequences of
+          climate change are already impacting our planet, and it's our responsibility to address this crisis. By
+          signing this petition, you're committing to educate yourself and others about the challenges we face. You're
+          showing your dedication to a sustainable future and advocating for the policies that can help combat climate
+          change. Together, we can make a difference and protect our planet for future generations. Sign now and be a
+          part of the solution.</p>
+      </div>
+
+      <!-- Starting signatures -->
+      <div id=sigs class="signatures">
+        <p>🖊️ Sophia from Sydney supports this.</p>
+        <p>🖊️ Javier from Mexico City supports this.</p>
+        <p>🖊️ Isabelle from Paris supports this.</p>
+      </div>
+    </div>
+
+    <!--- Sign Petition Form --->
+    <form id="sign-petition" title="sign-petition">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+
+      <label for="homeCity">Home City:</label>
+      <input type="text" id="homeCity" name="homeCity">
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email">
+    </form>
+
+    <br>
+    <!--- Sign Now Button --->
+    <button id="sign-now-button">Sign Now</button>
+
+  </div>
+
+  <br>
+
+  <!-- Footer -->
+  <div class="w_footer">
+    <div class="footer">
+      <a href="https://unequalcarbonfootprints.org/">
+        <p>Calculate your Carbon Footprint</p>
+      </a>
+      <a href="https://teamtrees.org/">
+        <p>Check out what this organization is doing!</p>
+      </a>
+    </div>
+    <button class="theme-button" id="top-button">Top ⇧</button>
+  </div>
+
+  <!-- Modal -->
+  <div id="thanks-modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div id="modal-text-container">
+        <p id="thanks-modal-content">Placeholder text</p>
+        <button id="modal-close-button" class="theme-button">Close</button>
+      </div>
+      <!-- Link to a gif overlayed on modal -->
+      <img
+        src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzZnMTU0eGNzdHR4bzE3eTV3OGkxeTB0NTh3OXdudGswdnpxcW1kOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/h5vFcvARn349ZaT27M/giphy.webp"
+        width="50%" height="80%" style="position:absolute">
+      </img>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
