@@ -1,5 +1,5 @@
 # EcoEnsemble
-Website initially created when I was a student in [CodePath's 101 Web Development Course.](https://www.codepath.org/courses/web-development)
+Website initially created when I was a Tech Fellow in [CodePath's 101 Web Development Course.](https://www.codepath.org/courses/web-development)
 
 I revisited the old site and decided to update it with a cleaner look, something I had wanted to do at the end of the course. 
 
