@@ -13,6 +13,7 @@ Thanks to Cloudflare Pages, the site is deployed for you to see [here.](https://
 ![EcoEnsemble](https://github.com/Emorque/EcoEnsemble/assets/121983998/c8d2580b-1a84-4cc4-b576-d34bd5511d02)
 ![YT-screenshot](https://github.com/Emorque/EcoEnsemble/assets/121983998/64bae780-8647-4ef9-8eeb-03fa27444123)
 
+A Live Demo can be found [here](https://www.loom.com/share/4bee55149b194f30ab4263bdd985f043?sid=5974430a-2164-4e3a-9697-451c049269e1).
 
 ## Acknowledgements
 - Thanks again to [CodePath](https://www.codepath.org/) for the help throughout their Web Development Course. And for everything else they've done!
